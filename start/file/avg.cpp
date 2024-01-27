@@ -35,7 +35,7 @@ int main()
 			cin >> inp;
 			sum += inp;
 
-			fin >>  finp;
+			fin >>  finp; // push data from fin file fo fin(like cin) and against fout
 			fsum += finp;
 			goto L;
 		}
@@ -48,7 +48,9 @@ int main()
 		cout << "avg= " << avg << endl;
 		fout << "file avg= " << favg << endl;
 
-
+// every work which we are doing by cin and cout we can do that by fin and fout, f and c are seperated
+// fin.eof used for times we want to know reading from file where is doing now
+// cout is related to console and fout is related to file
 
 		fin.close();
 		fout.close();
